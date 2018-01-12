@@ -1,0 +1,77 @@
+/* Switching box-sizing for Bootstrap V4 Alpha version: */
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/* General parameters for all sizes: */
+button {
+    cursor: pointer;
+}
+
+#footer {
+    text-align: center;
+}
+
+.alert {
+    margin-top: 2.3vh;
+}
+
+.end-line {
+    margin-top: 2.3vh;
+}
+
+#nextBtn, #prevBtn{
+    width: 49.32%;
+}
+
+#nextBtn {
+    margin-right: 0.5%;
+}
+
+#preBtn {
+    margin-left: 0.5%;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) { ... }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    nav {
+        position: fixed;
+    }
+    
+    #main-container {
+        margin-top: 10vh;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #search-panel {
+        float: right;
+        right: 5px;
+        position: absolute;
+    }
+    
+    nav {
+        position: fixed;
+    }
+    
+    #main-container {
+        margin-top: 9.5vh;
+    }
+    
+    #footer {
+        margin-top: 30vh;
+    }
+}

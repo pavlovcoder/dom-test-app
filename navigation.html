@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>DOM Navigation</title>
+        <link rel="stylesheet" type="text/css" href="lib/index.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- The main navigation bar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"></button>
+            <a class="navbar-brand" href="index.html">DOM</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="navigation.html">Navigaton</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nodes.html">Nodes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collections.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="node_lists.html">Node Lists</a>
+                    </li>
+                </ul>
+                <form class="form-inline" id="search-panel">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        
+        <!-- General Content -->
+        <div class="container-fluid" id="main-container">
+            <div class="container">
+                <div class="card">
+                    <h3 class="card-header">Child nodes and Nodes values</h3>
+                    <div class="card-block">
+                        <h4 class="card-title">Testing block-1</h4>
+                        <p class="card-text">For start of execution this test-block, just click to the button.</p>
+                        <button type="button" class="btn btn-outline-primary" onclick="childNode('first')">innerHTML</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="childNode('second')">nodeValue</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="childNode('third')">childNodes[0]</button>
+                    </div>
+                </div>
+                <p class="end-line"></p>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h3 class="card-header">DOM Root Nodes</h3>
+                    <div class="card-block">
+                        <h4 class="card-title">Testing block-2</h4>
+                        <p class="card-text">For start of execution this test-block, just click to the button.</p>
+                        <button type="button" class="btn btn-outline-primary" onclick="rootNodes('first')">Get body of document</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="rootNodes('second')">Get full document</button>
+                    </div>
+                </div>
+                <p class="end-line"></p>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h3 class="card-header">nodeName, nodeValue and nodeType</h3>
+                    <div class="card-block">
+                        <h4 class="card-title">Testing block-3</h4>
+                        <p class="card-text">For start of execution this test-block, just click to the button.</p>
+                        <button type="button" class="btn btn-outline-primary" onclick="nodeFunction('first')">nodeName</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="nodeFunction('second')">nodeValue</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="nodeFunction('third')">nodeType</button>
+                    </div>
+                </div>
+                <p class="end-line"></p>
+            </div>
+            <div class="container">
+                <a class="btn btn-primary" href="index.html" role="button" id="prevBtn">⟵ PREVIOUS</a>
+                <a class="btn btn-primary" href="nodes.html" role="button" id="nextBtn">NEXT ⟶</a>
+            </div>
+        </div>
+        
+        <footer id="footer">
+            <hr class="my-4">
+            <p class="lead">Copyright © Vladimir Pavlov 2017 </p>
+        </footer>
+        
+        <!-- Bootstrap Slim, tether and JavaScript V4 Alpha vesrion -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!-- My own javascript file: -->
+        <script src="lib/index.js"></script>
+    </body>
+</html>
